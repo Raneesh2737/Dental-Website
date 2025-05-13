@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif,serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    background-color: rgb(164, 164, 164);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url(icon/image\ bg\ header.png);
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul{
+    display: flex;
+    gap: 100px;
+}
+.header .cta-btn{
+    color: #ffffff;
+    padding: 6px 15px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+}
