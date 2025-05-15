@@ -13,25 +13,40 @@ body{
 ul{
     list-style: none;
 }
-body{
-    background-color: rgb(164, 164, 164);
+.container{
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
 }
-.header{
+.row{
+    display: flex;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.header-cnt{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    background-image: url(icon/image\ bg\ header.png);
-    height:100vh;
-    width: 100%;
-    background-repeat: no-repeat;
+    align-items: center;
+    padding-top: 10px;
+    
 }
 nav a{
     text-decoration: none;
-    color: #ffffff;
+    color: #605858;
+    padding: 5px 10px;
+    transition: 0.3s;
+
 }
 nav ul{
     display: flex;
-    gap: 100px;
+    gap: 80px;
 }
 .header .cta-btn{
     color: #ffffff;
@@ -39,4 +54,67 @@ nav ul{
     border-style: solid;
     border-color: white;
     border-radius: 100px;
+    text-decoration: none;
+}
+nav ul li:hover{
+    border-bottom: 3px solid dimgray;
+}
+.logo{
+    max-width: 157;
+    max-height: 35;
+}
+.bg-pic{
+    width: 100vh;
+    height: 100vh;
+}
+#hero{
+    background-image: url(https://img.freepik.com/premium-photo/modern-treatment-professional-dental-clinic_168991-3385.jpg?uid=R188271284&ga=GA1.1.943463155.1747125776&semt=ais_hybrid&w=740);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color: #ffffff;
+}
+.hero-content{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+.c1{
+    display: flex;
+    align-items: flex-start;
+}
+.vid-btn{
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+    gap: 15px;
+
+    
+}
+.c3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.c1 p{
+    max-width: 241px;
+}
+.c3 p{
+    max-width: 596px;
+    margin: 0;
+}
+h1{
+    max-width: 540px;
+    font-weight: bold;
+}
+.vid-btn img{
+    width: 30px;
+    height: 30px;
 }
