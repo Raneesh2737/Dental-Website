@@ -6,7 +6,7 @@ body{
     font-family: sans-serif,serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: rgb(231, 231, 231);
     flex-wrap: wrap;
 }
 
@@ -18,12 +18,23 @@ ul{
     overflow: hidden;
     margin: 0 auto;
 }
-.row{
-    display: flex;
-    width: 100%;
+.col-5{
+    width: 41.6%;
+    flex: 0 0 auto;
+    max-width: 41.6%;
+}
+.col-6{
+    width: 50%;
+    flex: 0 0 auto;
+    max-width: 50%;
+}
+.col-7{
+    width: 58.3%;
+    flex: 0 0 auto;
+    max-width: 58.3%;
 }
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -39,14 +50,14 @@ header{
 }
 nav a{
     text-decoration: none;
-    color: #605858;
+    color: #ffffff;
     padding: 5px 10px;
     transition: 0.3s;
 
 }
 nav ul{
     display: flex;
-    gap: 80px;
+    gap: 70px;
 }
 .header .cta-btn{
     color: #ffffff;
@@ -67,13 +78,15 @@ nav ul li:hover{
     width: 100vh;
     height: 100vh;
 }
-#hero{
-    background-image: url(https://img.freepik.com/premium-photo/modern-treatment-professional-dental-clinic_168991-3385.jpg?uid=R188271284&ga=GA1.1.943463155.1747125776&semt=ais_hybrid&w=740);
+
+#hero {
+    background-image: linear-gradient(45deg, #08081b0f, #1010117a, #2c2c2d8c), url(https://img.freepik.com/premium-photo/modern-treatment-professional-dental-clinic_168991-3385.jpg?uid=R188271284&ga=GA1.1.943463155.1747125776&semt=ais_hybrid&w=740);
     width: 100%;
     height: 100vh;
     background-size: cover;
     color: #ffffff;
 }
+
 .hero-content{
     height: 100vh;
     display: flex;
@@ -118,3 +131,143 @@ h1{
     width: 30px;
     height: 30px;
 }
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    background-color: rgb(247 247 246);
+}
+.images img{
+    width: auto;
+    height: 45px;
+}
+.col-md-6 img{
+    padding: 10px;
+    background-color: rgb(226, 229, 250);
+    border-radius: 10px;
+    
+}
+.intro-img img{
+    max-width: 420px;
+    height: auto;
+}
+.col-md-7 span{
+    padding: 4px 8px;
+    background-color: rgb(226, 229, 250);
+    border-radius: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.container-bg{
+    padding: 50px 55px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.srv-btn{
+    background-color: rgb(65 95 255);
+    padding: 9px 18px;
+    color: #ffffff;
+    border-radius: 10px;
+    width: fit-content;
+}
+h2 {
+    font-weight: 500;
+    font-size: 38px;
+    padding-top: 15px;
+}
+.col-md-7 p{
+    font-size: 14px;
+}
+.col-md-7 .row{
+    flex-wrap: nowrap;
+    gap: 25px;
+
+}
+.two-section{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+h5{
+    padding: 6px 0;
+}
+.news-tips{
+    text-align: center;
+    padding-top: 60px;
+}
+.news-tips span{
+    padding: 7px 15px;
+    background-color: rgb(226, 229, 250);
+    color: rgb(65 95 255);
+    border-radius: 20px;
+
+}
+.three-btns{
+    display: flex;
+    gap: 10px;
+    padding: 1rem 0;
+}
+.three-btns p{
+    padding: 5px 10px;
+    border: 0.5px solid;
+    border-radius: 25px;
+    margin: 0;
+
+}
+.news-tips .image{
+    position: relative;
+    
+}
+.news-tips .image img{
+    max-width: 100%;
+    
+
+}
+.news-tips .col-4 span{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    padding: 7px 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+}
+.news-tips .cntnt{
+    text-align: start;
+}
+.news-tips h3{
+    padding-top: 15px;
+}
+.content .learn-more{
+    padding: 7px 15px;
+    color: rgb(65 95 255);
+    border: 2px solid rgb(65 95 255);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.community{
+    text-align: center;
+}
+.community .row{
+    align-items: center;
+    text-align: start;
+    padding-top: 30px;
+}
+.community .image img{
+    border-radius: 15px;
+}
+.community .content p{
+    padding-bottom: 60px;
+    font-size: smaller;
+}
+.community span{
+    padding: 7px 15px;
+    background-color: rgb(226, 229, 250);
+    color: rgb(65 95 255);
+    border-radius: 20px;
+}
+.community .content h3{
+    font-weight: 700;
+}
+
