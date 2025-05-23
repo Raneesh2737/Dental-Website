@@ -35,7 +35,7 @@ ul{
 }
 header{
     position: absolute;
-    top: 0;
+    top: 5px;
     width: 100%;
     z-index: 100;
     flex-wrap: wrap;
@@ -46,6 +46,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+    height: 70px;
     
 }
 nav a{
@@ -68,7 +69,8 @@ nav ul{
     text-decoration: none;
 }
 nav ul li:hover{
-    border-bottom: 3px solid dimgray;
+    text-decoration: underline solid rgb(230, 228, 228);
+    text-underline-offset: 10px;
 }
 .logo{
     max-width: 157;
@@ -174,6 +176,7 @@ h2 {
     font-weight: 500;
     font-size: 38px;
     padding-top: 15px;
+    position: relative;
 }
 .col-md-7 p{
     font-size: 14px;
@@ -217,12 +220,12 @@ h5{
 }
 .news-tips .image{
     position: relative;
+    height: 350px;
     
 }
 .news-tips .image img{
-    max-width: 100%;
-    
-
+    width: 100%;
+    height: 100%;
 }
 .news-tips .col-4 span{
     position: absolute;
@@ -245,6 +248,11 @@ h5{
     border: 2px solid rgb(65 95 255);
     border-radius: 8px;
     background-color: #ffffff;
+}
+.content .learn-more:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(65 95 255);
 }
 .community{
     text-align: center;
@@ -350,6 +358,14 @@ h5{
     padding: 7px 15px;
     color: #ffffff;
     border-radius: 10px;
+    transition: ease-in-out 0.3ms;
+
+}
+.email label:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #2b75ca;
+    font-weight: 600;    
 }
 footer{
     background-color: rgb(48 48 48);
@@ -364,13 +380,16 @@ footer{
     position: absolute;
     padding: 20px 35px;
     color: #ffffff;
-    background-color: #2b75ca;
+    background: url(../img/vector.png) , #2b75ca;
     display: flex;
     align-items: center;
     border-radius: 20px;
+    margin: 0 auto;
     top: -50px;
-    right: 90px;
-    left: 90px;
+    right: 0;
+    left: 0;
+    width: 90%;
+    max-width: 1150px;
 }
 .email p{
     opacity: .8;
@@ -380,6 +399,7 @@ footer{
 .email h3{
     max-width: 560px;
     font-size: 40px;
+    position: relative;
 }
 .about{
     display: flex;
@@ -409,21 +429,50 @@ footer{
 .footer-bottom p{
     margin: 0;
 }
-/* .line-dsg img{
+.line-dsg img{
     position: absolute;
     top: -155px;
-    /* left: 243px; */    
-.play-btn{
+    left: 0;
+    margin: 0 auto; 
+    opacity: .5;
+}
+.play-btn {
     background-color: transparent;
     position: absolute;
+    margin: auto;
+    left: 0;
+    right: 27px;
+    width: 23%;
+    top: 0;
+    bottom: 0;
+    transition: 0.3ms ease-in-out;
+    padding: 25px 28px;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
 }
 .intro-img{
     position: relative;
 }
-.intro-img .play-btn{
-    left: 38%;
-    width: 55px;
-    top: 44%;
+.intro-img .play-btn:hover{
+    cursor: pointer;
+
+}
+.container{
+    padding: 0;
+}
+#health-services{
+    position: relative;
+    overflow: clip;
+}
+#health-services .line-dsg img{
+    position: absolute;
+    top: -65px;
+    right: -1043px;
+    margin: 0 auto;
+    width: 280px;
+    transform: rotateZ(68deg);
+    filter: invert(1);
+    opacity: .5;
 }
 
 
